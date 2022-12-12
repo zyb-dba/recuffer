@@ -84,18 +84,18 @@ curl -X PUT http://192.168.1.1:18001/proxy/cmdblacklist/del/get/a
 - 高可用:可采用单台或者多台部署，使用负载均衡转发即可
 - 容器化:我们在公司使用的是在k8s中使用，本身支持容器化部署
 ***
-<!-- #### Authors
+#### Authors
 - [@guyage](https://github.com/guyage)
 - [@yangyicong](https://github.com/congshenV)
-*** -->
+***
 #### 参考开源软件
 - [codis](https://github.com/CodisLabs/codis)
 - [go-redis](https://github.com/go-redis/redis)
 ***
-##### 兼容性
+#### 兼容性
 不支持的命令
 <table><colgroup><col><col><col><col></colgroup><thead><tr><th><div>CommandType</div></th><th><div>CommandName</div></th><th>CommandType</div></th><th><div>CommandName</div></th></tr></thead><tbody><tr><td>Keys</td><td>keys</td><td>Transactions</td><td>discard</td></tr><tr><td></td><td>migrate</td><td></td><td>exec</td></tr><tr><td></td><td>move</td><td></td><td>multi</td></tr><tr><td></td><td>object</td><td></td><td>unwatch</td></tr><tr><td></td><td>randomkey</td><td></td><td>watch</td></tr><tr><td></td><td>rename</td><td>Scripting</td><td>script</td></tr><tr><td></td><td>renamenx</td><td>Server</td><td>bgrewriteaof</td></tr><tr><td></td><td>scan</td><td></td><td>bgsave</td></tr><tr><td>Strings</td><td>bitop</td><td></td><td>client</td></tr><tr><td></td><td>msetnx</td><td></td><td>config</td></tr><tr><td>Lists</td><td>blpop</td><td></td><td>dbsize</td></tr><tr><td></td><td>brpop</td><td></td><td>debug</td></tr><tr><td></td><td>brpoplpush</td><td></td><td>flushall</td></tr><tr><td>Pub/Sub</td><td>psubscribe</td><td></td><td>flushdb</td></tr><tr><td></td><td>publish</td><td></td><td>lastsave</td></tr><tr><td></td><td>punsubscribe</td><td></td><td>latency</td></tr><tr><td></td><td>subscribe</td><td></td><td>monitor</td></tr><tr><td></td><td>unsubscribe</td><td></td><td>psync</td></tr></tbody></table>
 
 ***
-##### License
+#### License
 recuffer is licensed under MIT， see LICENSE.txt
